@@ -1,0 +1,82 @@
+/* Home page */
+
+.home-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+    gap: 3em;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+figure img {
+    background-color: var(--highlight-color);
+}
+
+h1 {
+    margin-bottom: 0.2em;
+}
+
+span {
+    font-weight: inherit;
+    color: var(--highlight-color);
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.after {
+    display: none;
+}
+
+@media only screen and (max-width: 1320px) {
+    .home-flexbox {
+        flex-direction: column;
+    }
+
+    .welcome-message {
+        align-items: center;
+        text-align: center;
+    }
+
+    .before {
+        display: none;
+    }
+
+    .after {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 548px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.45em;
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .portfolio-button {
+        font-size: 1em;
+    }
+}
