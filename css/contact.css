@@ -41,7 +41,7 @@ p {
 
 @media only screen and (max-width: 768px) {
     .contact {
-        width: calc(100% - 6em);
+        width: calc(100% - 2em);
         margin: 0;
         padding: 0;
         background-color: var(--bg-color);
