@@ -469,7 +469,7 @@ section#about-me {
     gap: 2em;
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 850px) {
     .section-container {
         padding: 3em var(--spacing-on-sides);
     }
@@ -478,8 +478,8 @@ section#about-me {
         padding: 0;
     }
 
-    #skills {
-        padding: 6em var(--spacing-on-sides);
+    #about-me .section-container {
+        gap: 0;
     }
 }
 
@@ -555,8 +555,9 @@ section#about-me {
 .percentage {
     position: absolute;
     font-size: 0.5em;
+    font-weight: 700;
     z-index: 1;
-    color: var(--fg-color);
+    color: var(--bg-color);
 }
 
 @media only screen and (max-width: 1093px) {
