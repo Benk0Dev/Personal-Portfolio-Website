@@ -42,6 +42,9 @@ function setTheme(themeBefore) {
         document.querySelector('footer').style.color = 'white';
         document.querySelector('.footer-container').style.color = 'white';
         document.querySelector('footer .logo span').style.color = 'white';
+        document.querySelectorAll('.project').forEach(project => {
+            project.style.backgroundColor = 'white';
+        });
         localStorage.setItem('theme', 'light');
     } else if (themeBefore === 'light') {
         colors.style.setProperty('--bg-color', 'hsl(224, 16%, 15%)');
@@ -64,6 +67,9 @@ function setTheme(themeBefore) {
         document.querySelector('footer').style.color = '';
         document.querySelector('.footer-container').style.color = '';
         document.querySelector('footer .logo span').style.color = '';
+        document.querySelectorAll('.project').forEach(project => {
+            project.style.backgroundColor = '';
+        });
         localStorage.setItem('theme', 'dark');
     }
 }
@@ -179,7 +185,6 @@ projectTitles.forEach((projectTitle, index) => {
         }
     });
 });
-
 
 
 const form = document.querySelector('form');
