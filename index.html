@@ -3,45 +3,643 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Benas Kuliesis</title>
+    <link rel="icon" href="additional-files/images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/1232d4c92d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header>
-        <span>BK</span>
         <nav>
-            <ul>
-                <li><a href="index.html" class="current-page">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <button class="button nav-button clear-button"><i class="uil uil-bars"></i></button>
+            <a href="">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="uil uil-graduation-cap"></i>
+                    </div>
+                    <span>Benas Kuliesis</span>
+                </div>
+            </a>
+            <div class="nav">
+                <a href="#" class="button clear-button">Home</a>
+                <a href="#about-me" class="button clear-button">About</a>
+                <a href="#projects" class="button clear-button">Projects</a>
+                <a href="#contact" class="button clear-button">Contact</a>
+            </div>
+            <button class="button color-theme-button clear-button"><i></i></button>
         </nav>
     </header>
-    <main>
-        <div class="home-flexbox">
+
+    <nav id="nav-menu">
+        <ul>
+            <li><button class="button exit-nav-button clear-button"><i class="uil uil-times"></i></button></li>
+            <li><a href="#" class="button clear-button">Home</a></li>
+            <li><a href="#about-me" class="button clear-button">About Me</a></li>
+            <li><a href="#projects" class="button clear-button">Projects</a></li>
+            <li><a href="#contact" class="button clear-button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="section-container">
             <div class="welcome-message">
                 <h1>Hello there,</h1>
                 <h1>I'm <span>Benas Kuliesis</span></h1>
-                <h2>BSc Computer Science Student</h2>
-                <a href="portfolio.html" class="button portfolio-button before">PORTFOLIO</a>
+                <h3>BSc Computer Science Student</h3>
+                <a href="#about-me" class="button round-button">About Me<i class="fa-solid fa-arrow-down"></i></a>
             </div>
             <figure>
-                <img src="images/profile-picture-with-filter.png" alt="Benas Kuliesis" title="Benas Kuliesis">
+                <img src="additional-files/images/profile-picture.png" alt="Benas Kuliesis" title="Benas Kuliesis">
             </figure>
-            <a href="portfolio.html" class="button portfolio-button after">PORTFOLIO</a>
         </div>
-    </main>
+    </section>
+
+    <section id="about-me" class="secondary-section">
+        <div class="section-container">
+            <h1>About Me</h1>
+            <article>
+                <p>
+                    I am a BSc Computer Science student at Queen Mary University of London. I'm passionate about technology and entrepreneurship, with a keen interests in web development and software development. I also have a strong interest in cutting-edge technologies like AI and blockchain. My ambition is to stay at the forefront of the tech industry, leveraging my skills to create innovative and user-centric digital experiences.
+                </p>
+            </article>
+            <a href="additional-files/CV.pdf" target="_blank" class="button square-button">View CV<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        
+        <div class="section-container" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+
+                <div class="skills-group">
+                    <div class="skills-group-heading">
+                        <i class="fa-solid fa-code group-icon"></i>
+                        <h2>Web Development</h2>
+                        <i class="fa-solid fa-chevron-up group-arrow"></i>
+                    </div>
+                    <div class="skills-list">
+
+                        <div class="skill">
+                            <h4>HTML</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(95% - 3em)">95%</span>
+                                <div class="skill-bar-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>CSS</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(90% - 3em)">90%</span>
+                                <div class="skill-bar-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(65% - 3em)">65%</span>
+                                <div class="skill-bar-level" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>PHP</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(50% - 3em)">50%</span>
+                                <div class="skill-bar-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(50% - 3em)">50%</span>
+                                <div class="skill-bar-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-group-heading">
+                        <i class="fa-solid fa-terminal group-icon"></i>
+                        <h2>Application Development</h2>
+                        <i class="fa-solid fa-chevron-up group-arrow"></i>
+                    </div>
+                    <div class="skills-list">
+
+                        <div class="skill">
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(85% - 3em)">85%</span>
+                                <div class="skill-bar-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(75% - 3em)">75%</span>
+                                <div class="skill-bar-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(50% - 3em)">50%</span>
+                                <div class="skill-bar-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-group-heading">
+                        <i class="fa-solid fa-code-branch group-icon"></i>
+                        <h2>Version Control</h2>
+                        <i class="fa-solid fa-chevron-up group-arrow"></i>
+                    </div>
+                    <div class="skills-list">
+
+                        <div class="skill">
+                            <h4>Git</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(60% - 3em)">60%</span>
+                                <div class="skill-bar-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>GitHub</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(60% - 3em)">60%</span>
+                                <div class="skill-bar-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+ 
+                <div class="skills-group">
+                    <div class="skills-group-heading">
+                        <i class="fa-regular fa-pen-to-square group-icon"></i>
+                        <h2>Other</h2>
+                        <i class="fa-solid fa-chevron-up group-arrow"></i>
+                    </div>
+                    <div class="skills-list">
+
+                        <div class="skill">
+                            <h4>Microsoft Office</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(80% - 3em)">80%</span>
+                                <div class="skill-bar-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>Adobe Photoshop</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(50% - 3em)">50%</span>
+                                <div class="skill-bar-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>Adobe XD</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(50% - 3em)">50%</span>
+                                <div class="skill-bar-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <h4>Figma</h4>
+                            <div class="skill-bar">
+                                <span class="percentage" style="left: calc(50% - 3em)">50%</span>
+                                <div class="skill-bar-level" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-container">
+
+            <div class="qualification-headings">
+                <div id="education-button" class="selected">
+                    <h1>Education</h1>
+                    <i class="uil uil-graduation-cap"></i>
+                </div>
+                <div id="experience-button">
+                    <h1>Experience</h1>
+                    <i class="uil uil-briefcase"></i>
+                </div>
+            </div>
+
+            <div class="qualifications-container education">
+                <div class="qualification-layout">
+                    <div class="to-display">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">Full-Stack Engineer Course</h3>
+                        <h4 class="qualification-institution">Codecademy</h4>
+                        <p class="qualification-location">Virtual</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>Feb 2024 - Present</p>
+                    </div>
+                    <div class="to-remove">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="to-remove"></div>
+                </div>
+                <div class="qualification-layout q">
+                    <div class="to-remove"></div>
+                    <div>
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">BSc Computer Science</h3>
+                        <h4 class="qualification-institution">Queen Mary University of London</h4>
+                        <p class="qualification-location">London, United Kingdom</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>Sep 2023 - Present</p>
+                    </div>
+                </div>
+                <div class="qualification-layout last-line">
+                    <div class="to-display">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">A-Levels</h3>
+                        <h4 class="qualification-institution">St Gregory's Catholic Science College</h4>
+                        <p class="qualification-location">London, United Kingdom</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>Sep 2021 - Jun 2023</p>
+                    </div>
+                    <div class="to-remove">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="to-remove"></div>
+                </div>
+                <div class="qualification-layout">
+                    <div class="to-remove"></div>
+                    <div>
+                        <div class="qualification-circle"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">GCSEs</h3>
+                        <h4 class="qualification-institution">St Gregory's Catholic Science College</h4>
+                        <p class="qualification-location">London, United Kingdom</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>Sep 2016 - Jun 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qualifications-container experience">
+                <div class="qualification-layout">
+                    <div class="to-display">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">Web Development Job Simulation</h3>
+                        <h4 class="qualification-institution">Moreton Bay Regional Council</h4>
+                        <p class="qualification-location">Forage (Virtual)</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>April 2024</p>
+                    </div>
+                    <div class="to-remove">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="to-remove"></div>
+                </div>
+                <div class="qualification-layout">
+                    <div class="to-remove"></div>
+                    <div>
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">Entrepreneur Bootcamp (QHack)</h3>
+                        <h4 class="qualification-institution">Queen Mary University of London</h4>
+                        <p class="qualification-location">London, United Kingdom</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>March 2024</p>
+                    </div>
+                    <div class="to-display"></div>
+                </div>
+                <div class="qualification-layout last-line">
+                    <div class="to-display">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">Marketing and Social Media</h3>
+                        <h4 class="qualification-institution">Sanctex Ltd</h4>
+                        <p class="qualification-location">Radlett, United Kingdom</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>July 2022</p>
+                    </div>
+                    <div class="to-remove">
+                        <div class="qualification-circle"></div>
+                        <div class="qualification-line"></div>
+                    </div>
+                    <div class="to-remove"></div>
+                </div>
+                <div class="qualification-layout">
+                    <div class="to-remove"></div>
+                    <div>
+                        <div class="qualification-circle"></div>
+                    </div>
+                    <div class="qualification">
+                        <h3 class="qualification-title">GCSE Mathematics Mentoring</h3>
+                        <h4 class="qualification-institution">St Gregory's Catholic Science College</h4>
+                        <p class="qualification-location">London, United Kingdom</p>
+                        <p class="qualification-date"><i class="uil uil-schedule"></i>Feb 2022 - May 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <h1>Projects</h1>
+            <div class="projects-container">
+                
+                <div class="project">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h2>Personal Portfolio Website</h2>
+                            <i class="fa-solid fa-chevron-up description-arrow"></i>
+                        </div>
+                        <article>
+                            <p>
+                                The website you are currently viewing. Features include a responsive, modern design, the ability for the user to customise the theme of the website, and a contact form for users to contact me.
+                            </p>
+                        </article>
+                    </div>
+                    <figure class="project-image">
+                        <img src="additional-files/images/project-images/personal-portfolio-website.png" alt="Project 1" title="Project 1">
+                    </figure>
+                    <div class="technologies-container">
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(227, 79, 38)"></div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(38, 79, 227)"></div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(240, 219, 79)"></div>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info">
+                            <i class="uil uil-github-alt"></i>
+                            <span>Available</span>
+                        </div>
+                        <div class="info">
+                            <i class="uil uil-clock"></i>
+                            <span>2024</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/BKuliesis/Personal-Portfolio-Website" class="button project-button" target="_blank">View Project<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="project">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h2>Portfolio With Blog</h2>
+                            <i class="fa-solid fa-chevron-up description-arrow"></i>
+                        </div>
+                        <article>
+                            <p>
+                                A full-stack portfolio website with an integrated blog. Features include a responsive design and blog posting functionality (when logged in) with the ability to preview posts.
+                            </p>
+                        </article>
+                    </div>
+                    <figure class="project-image">
+                        <img src="additional-files/images/project-images/portfolio-with-blog.png" alt="Project 1" title="Project 1">
+                    </figure>
+                    <div class="technologies-container">
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(227, 79, 38)"></div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(38, 79, 227)"></div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(240, 219, 79)"></div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(79, 93, 148)"></div>
+                            <span>PHP</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(0, 117, 143)"></div>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info">
+                            <i class="uil uil-github-alt"></i>
+                            <span>Available</span>
+                        </div>
+                        <div class="info">
+                            <i class="uil uil-clock"></i>
+                            <span>2024</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/BKuliesis/Portfolio-With-Blog" class="button project-button" target="_blank">View Project<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="project">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h2>Horse Race Simulator</h2>
+                            <i class="fa-solid fa-chevron-up description-arrow"></i>
+                        </div>
+                        <article>
+                            <p>
+                                A horse race simulator with a graphical user interface made with Java Swing, featuring customisable races and horses, live statistics updates, and virtual betting capabilities.
+                            </p>
+                        </article>
+                    </div>
+                    <figure class="project-image">
+                        <img src="additional-files/images/project-images/horse-race-simulator.png" alt="Project 1" title="Project 1">
+                    </figure>
+                    <div class="technologies-container">
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(248, 152, 29)"></div>
+                            <span>Java</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(224, 52, 42)"></div>
+                            <span>Java Swing</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info">
+                            <i class="uil uil-github-alt"></i>
+                            <span>Available</span>
+                        </div>
+                        <div class="info">
+                            <i class="uil uil-clock"></i>
+                            <span>2024</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/BKuliesis/Horse-Race-Simulator" class="button project-button" target="_blank">View Project<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="project">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h2>Dynamic Noughts and Crosses AI</h2>
+                            <i class="fa-solid fa-chevron-up description-arrow"></i>
+                        </div>
+                        <article>
+                            <p>
+                                A Noughts and Crosses application with a graphical user interface made with Pygame. It consists of several different modes, where the main mode of the game is to play against an AI on a growing grid size and win length which grow as you progress. Features include a leaderboard which ranks all user accounts based on their high scores, the ability to back track moves after games finish, the ability to play player vs player with custom grid settings and more.
+                            </p>
+                        </article>
+                    </div>
+                    <figure class="project-image">
+                        <img src="additional-files/images/project-images/dynamic-noughts-and-crosses-ai.png" alt="Project 1" title="Project 1">
+                    </figure>
+                    <div class="technologies-container">
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(53, 113, 163)"></div>
+                            <span>Python</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(8, 223, 28)"></div>
+                            <span>Pygame</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(0, 59, 87)"></div>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info">
+                            <i class="uil uil-github-alt"></i>
+                            <span>Available</span>
+                        </div>
+                        <div class="info">
+                            <i class="uil uil-clock"></i>
+                            <span>2023</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/BKuliesis/Dynamic-Noughts-and-Crosses-AI" class="button project-button" target="_blank">View Project<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="project">
+                    <div class="project-description">
+                        <div class="project-title">
+                            <h2>Particles Collision Simulator</h2>
+                            <i class="fa-solid fa-chevron-up description-arrow"></i>
+                        </div>
+                        <article>
+                            <p>
+                                A one-dimensional particle collision simulator with a GUI made with Pygame, which leverages principles of physics such as the conservation of momentum and the law of restitution. This simulator models the behavior of three balls contained between two walls, colliding with each other in a continuous loop. The coefficient of restitution, mass, and velocity of each ball are customisable in the code.
+                            </p>
+                        </article>
+                    </div>
+                    <figure class="project-image">
+                        <img src="additional-files/images/project-images/particles-collision-simulator.png" alt="Project 1" title="Project 1">
+                    </figure>
+                    <div class="technologies-container">
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(53, 113, 163)"></div>
+                            <span>Python</span>
+                        </div>
+                        <div class="technology">
+                            <div class="technology-circle" style="background-color: rgb(8, 223, 28)"></div>
+                            <span>Pygame</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info">
+                            <i class="uil uil-github-alt"></i>
+                            <span>Available</span>
+                        </div>
+                        <div class="info">
+                            <i class="uil uil-clock"></i>
+                            <span>2023</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/BKuliesis/Particles-Collision-Simulator" class="button project-button" target="_blank">View Project<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="secondary-section">
+        <div class="section-container">
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/mgegdeop" method="POST">
+                <div class="entry-container">
+                    <label for="fname">First Name<span class="error">*</span></label>
+                    <input type="text" id="fname" name="First Name" placeholder="First Name" autocomplete="off">
+                </div>
+                <div class="entry-container">
+                    <label for="sname">Last Name<span class="error">*</span></label>
+                    <input type="text" id="lname" name="Last Name" placeholder="Last Name" autocomplete="off">
+                </div>
+                <div class="entry-container two-cols">
+                    <label for="email">Email<span class="error">*</span></label>
+                    <input type="text" id="email" name="Email" placeholder="Email" autocomplete="off">
+                </div>
+                <div class="entry-container two-cols">
+                    <label for="message">Message<span class="error">*</span></label>
+                    <textarea id="message" name="Message" placeholder="Message" autocomplete="off"></textarea>
+                </div>
+                <button type="submit" class="button square-button  two-cols">Send<i class="uil uil-message"></i></button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        &copy; 2024 Benas Kuliesis. All rights reserved.
+        <div class="footer-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="uil uil-graduation-cap"></i>
+                </div>
+                <span>Benas Kuliesis</span>
+            </div>
+            <div class="footer-navigation">
+                <a href="#" class="button link-button">Home</a>
+                <a href="#about-me" class="button link-button">About</a>
+                <a href="#projects" class="button link-button">Projects</a>
+                <a href="#contact" class="button link-button">Contact</a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/benas-kuliesis/" target="_blank" class="button link-button"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://github.com/BKuliesis" target="_blank" class="button link-button"><i class="uil uil-github-alt"></i></a>
+                <a href="mailto:bkuliesis@gmail.com" target="_blank" class="button link-button"><i class="uil uil-envelope"></i></a>
+                <a href="https://wa.me/447845644972" target="_blank" class="button link-button"><i class="uil uil-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Benas Kuliesis. All rights reserved.
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
