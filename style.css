@@ -428,13 +428,16 @@ section#home {
     }
 
     .welcome-message {
-        margin-top: 8em;
         align-items: center;
         text-align: center;
     }
 
     #home .button {
         display: none;
+    }
+
+    #home .section-container {
+        padding-top: 11em;
     }
 }
 
@@ -756,7 +759,7 @@ section#projects {
     display: grid;
     grid-template-rows: auto 1fr auto auto 3em;
     min-height: 30em;
-    background-color: var(--bg-color);
+    background-color: var(--tertiary-bg-color);
     box-shadow:  0 0 0.5em rgba(0, 0, 0, 0.3);
     row-gap: 1em;
     padding: 2em;
@@ -853,7 +856,7 @@ section#projects {
 @media only screen and (max-width: 721px) {
     .projects-container {
         grid-template-columns: 1fr;
-        gap: 2em 0;
+        gap: 3em 0;
     }
 }
 
