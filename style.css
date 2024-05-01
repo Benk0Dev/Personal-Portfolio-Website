@@ -588,12 +588,6 @@ section#about-me {
     display: flex;
     align-items: center;
     column-gap: 0.25em;
-    transition: color 0.3s ease;
-}
-
-.qualification-headings h1:hover, .qualification-headings i:hover {
-    color: var(--secondary-fg-color);
-    transition: color 0.3s ease;
 }
 
 .qualification-headings i {
