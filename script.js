@@ -129,7 +129,7 @@ document.addEventListener('click', (event) => {
 
 
 
-const skillGroupHeadings = document.querySelectorAll('.skills-group-heading');
+const skillGroupHeadings = document.querySelectorAll('.skills-group');
 const groupArrows = document.querySelectorAll('.group-arrow');
 const skillsLists = document.querySelectorAll('.skills-list');
 

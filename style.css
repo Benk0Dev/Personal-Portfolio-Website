@@ -499,6 +499,7 @@ section#about-me {
     padding: 2em;
     border-radius: 0.5em;
     height: fit-content;
+    cursor: pointer;
 }
 
 .skills-group-heading {
@@ -506,7 +507,6 @@ section#about-me {
     grid-template-columns: 2.5em auto 1fr;
     align-items: center;
     column-gap: 1em;
-    cursor: pointer;
 }
 
 .group-icon {
