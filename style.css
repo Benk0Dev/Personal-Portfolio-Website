@@ -147,22 +147,6 @@ p {
     background-color: var(--hover-bg-color);
 }
 
-.round-button {
-    padding: 0.5em 1em;
-    border-radius: 5em;
-    font-size: 1.2em;
-    background-color: var(--highlight-color);
-    color: var(--bg-color);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    column-gap: 0.5em;
-}
-
-.round-button:hover {
-    background-color: var(--secondary-highlight-color);
-}
-
 .square-button {
     border-radius: 0.25em;
     font-size: 1em;
@@ -396,20 +380,8 @@ section#home {
     align-items: flex-start;
 }
 
-#home figure {
-    margin-bottom: 2em;
-    min-width: 30em;
-    max-width: 30em;
-}
-
-#home figure img {
-    width: 100%;
-    height: auto;
-    border-bottom: 0.5em solid var(--highlight-color);
-}
-
 .welcome-message h1 {
-    margin-bottom: 0.2em;
+    margin: 0 auto 0.2em;
 }
 
 .welcome-message span {
@@ -417,40 +389,23 @@ section#home {
     color: var(--highlight-color);
 }
 
-.welcome-message h3 {
-    margin-top: 0.2em;
-    margin-bottom: 1em;
+.hidden {
+    display: none;
 }
 
-@media only screen and (max-width: 1101px) {
-    #home .section-container {
-        flex-direction: column;
-    }
-
-    .welcome-message {
-        align-items: center;
-        text-align: center;
-    }
-
-    #home .button {
+@media only screen and (max-width: 691px) {
+    .to-hide {
         display: none;
     }
 
-    #home .section-container {
-        padding-top: 11em;
+    .hidden {
+        display: inline;
     }
 }
 
 @media only screen and (max-width: 515px) {
     #home .section-container {
         padding-top: 8em;
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    #home figure {
-        min-width: 0;
-        width: 100%;
     }
 }
 
