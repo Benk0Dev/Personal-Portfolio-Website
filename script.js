@@ -84,6 +84,7 @@ if (localStorage.getItem('theme') === 'light') {
     setTheme('light');
 } else {
     button.innerHTML = sunIcon;
+    setTheme('dark');
     localStorage.setItem('theme', 'light');
 }
 
