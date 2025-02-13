@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.png">
+    <link rel="mask-icon" href="images/favicon.svg" color="#000000">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/1232d4c92d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button class="button nav-button clear-button"><i class="uil uil-bars"></i></button>
+            <a href="index.html">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500"><path d="M1080.16 1125.37 839.05 809l-62.83.05V691.33h62.83l241.8-316.89h157.86L956.49 749.93l281.24 375.44h-157.57z"/><path d="M548.78 1125.56c-70.57 0-137.14-22.14-187.45-62.34-24.87-19.88-44.46-43.11-58.21-69.05-14.45-27.25-21.77-56.23-21.77-86.12 0-35.19 10.58-70.12 30.6-101.02 13.85-21.38 32.24-40.89 54.02-57.45-21.78-16.56-40.17-36.07-54.02-57.45-20.02-30.9-30.6-65.83-30.6-101.02 0-58.81 28.43-113.76 80.04-154.72 50.22-39.86 116.78-61.81 187.4-61.81h267.44v750.98H548.79Zm-3.55-317.42c-37.83 0-73.18 11.02-99.55 31.01-24.72 18.74-38.34 43.15-38.34 68.73s13.62 49.98 38.34 68.73c26.37 20 61.74 31.01 99.59 31.01l137.93.3V808.89l-137.97-.74Zm0-316.86c-37.83 0-73.18 11.02-99.55 31.01-24.72 18.74-38.34 43.15-38.34 68.73s13.62 49.98 38.34 68.73c26.37 20 61.74 31.01 99.59 31.01l137.93.3V492.03l-137.97-.74Z"/></svg>
+                    </div>
+                </div>
+            </a>
+            <div class="nav">
+                <a href="index.html" class="button clear-button">Home</a>
+                <a href="index.html#portfolio" class="button clear-button">Portfolio</a>
+                <a href="" class="button clear-button">Contact</a>
+            </div>
+            <button class="button color-theme-button clear-button"><i></i></button>
+        </nav>
+    </header>
+
+    <nav id="nav-menu">
+        <ul>
+            <li><button class="button exit-nav-button clear-button"><i class="uil uil-times"></i></button></li>
+            <li><a href="index.html" class="button clear-button">Home</a></li>
+            <li><a href="index.html#portfolio" class="button clear-button">Portfolio</a></li>
+            <li><a href="" class="button clear-button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/mgegdeop" method="POST">
+                <div class="entry-container">
+                    <label for="fname">First Name<span class="error">*</span></label>
+                    <input type="text" id="fname" name="First Name" placeholder="First Name" autocomplete="off">
+                </div>
+                <div class="entry-container">
+                    <label for="sname">Last Name<span class="error">*</span></label>
+                    <input type="text" id="lname" name="Last Name" placeholder="Last Name" autocomplete="off">
+                </div>
+                <div class="entry-container two-cols">
+                    <label for="email">Email<span class="error">*</span></label>
+                    <input type="text" id="email" name="Email" placeholder="Email" autocomplete="off">
+                </div>
+                <div class="entry-container two-cols">
+                    <label for="message">Message<span class="error">*</span></label>
+                    <textarea id="message" name="Message" placeholder="Message" autocomplete="off"></textarea>
+                </div>
+                <button type="submit" class="button square-button  two-cols">Send<i class="uil uil-message"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500"><path d="M1080.16 1125.37 839.05 809l-62.83.05V691.33h62.83l241.8-316.89h157.86L956.49 749.93l281.24 375.44h-157.57z"/><path d="M548.78 1125.56c-70.57 0-137.14-22.14-187.45-62.34-24.87-19.88-44.46-43.11-58.21-69.05-14.45-27.25-21.77-56.23-21.77-86.12 0-35.19 10.58-70.12 30.6-101.02 13.85-21.38 32.24-40.89 54.02-57.45-21.78-16.56-40.17-36.07-54.02-57.45-20.02-30.9-30.6-65.83-30.6-101.02 0-58.81 28.43-113.76 80.04-154.72 50.22-39.86 116.78-61.81 187.4-61.81h267.44v750.98H548.79Zm-3.55-317.42c-37.83 0-73.18 11.02-99.55 31.01-24.72 18.74-38.34 43.15-38.34 68.73s13.62 49.98 38.34 68.73c26.37 20 61.74 31.01 99.59 31.01l137.93.3V808.89l-137.97-.74Zm0-316.86c-37.83 0-73.18 11.02-99.55 31.01-24.72 18.74-38.34 43.15-38.34 68.73s13.62 49.98 38.34 68.73c26.37 20 61.74 31.01 99.59 31.01l137.93.3V492.03l-137.97-.74Z"/></svg>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/benas-kuliesis/" target="_blank" class="button link-button"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://github.com/BKuliesis" target="_blank" class="button link-button"><i class="uil uil-github-alt"></i></a>
+                <a href="mailto:bkuliesis@gmail.com" target="_blank" class="button link-button"><i class="uil uil-envelope"></i></a>
+                <a href="https://wa.me/447845644972" target="_blank" class="button link-button"><i class="uil uil-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Benas Kuliesis. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
