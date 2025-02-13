@@ -214,7 +214,7 @@ nav {
     align-items: center;
     font-size: 1.2em;
     font-weight: bold;
-    width: fit-content;
+    width: mix-content;
 }
 
 .logo-icon {
@@ -223,7 +223,6 @@ nav {
     justify-items: center;
     align-items: center;
     width: fit-content;
-    margin-right: 0.5em;
     font-size: 2em;
 }
 
