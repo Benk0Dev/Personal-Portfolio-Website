@@ -46,12 +46,12 @@ function setTheme(themeBefore) {
         colors.style.setProperty('--darker-gradient-color', 'black');
         colors.style.setProperty('--fg-color', 'hsl(0, 0.00%, 100.00%)');
         colors.style.setProperty('--secondary-fg-color', 'hsl(0, 0.00%, 84.70%)');
-        colors.style.setProperty('--tertiary-fg-color', 'hsl(0, 0.00%, 63.50%)');
+        colors.style.setProperty('--tertiary-fg-color', 'hsl(0, 0.00%, 68.20%)');
         colors.style.setProperty('--highlight-color', 'hsl(60, 100.00%, 50.00%)');
         colors.style.setProperty('--secondary-highlight-color', 'hsl(60, 100.00%, 38.00%)');
         colors.style.setProperty('--footer-color', 'hsl(0, 0.00%, 86.30%)');
         colors.style.setProperty('--scroll-bar-color', 'hsla(0, 0.00%, 7.80%, 0.50)');
-        colors.style.setProperty('--hover-bg-color', 'hsla(0, 0.00%, 100.00%, 0.05)');
+        colors.style.setProperty('--hover-bg-color', 'hsla(0, 0.00%, 100.00%, 0.1)');
         colors.style.setProperty('--form-input-color', 'hsl(0, 0.00%, 15%)');
         colors.style.setProperty('--error-color', 'hsl(0, 70%, 50%)');
         localStorage.setItem('theme', 'dark');

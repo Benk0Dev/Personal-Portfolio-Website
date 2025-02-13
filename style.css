@@ -365,12 +365,16 @@ main {
 }
 
 .sticky-section {
-    position: sticky;
-    top: calc(5em + 0.15em + 6em);
+    position: relative;
     left: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.sticky {
+    position: sticky;
+    top: calc(5em + 0.15em + 6em);
 }
 
 .sticky-section article {
