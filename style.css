@@ -184,7 +184,7 @@ footer .link-button:active {
 
 /* Container */
 
-nav, section, footer {
+nav, section, .footer-container {
     max-width: var(--max-width);
     margin: 0 auto;
 }
